@@ -14,6 +14,7 @@
 		1445B9B41D9068A700128F91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1445B9B31D9068A700128F91 /* Assets.xcassets */; };
 		1445B9B71D9068A700128F91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1445B9B51D9068A700128F91 /* LaunchScreen.storyboard */; };
 		1445B9C01D90695500128F91 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1445B9BE1D90695500128F91 /* Model.xcdatamodeld */; };
+		14CF54D31D945A22006433BF /* AGTSimpleCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CF54D21D945A22006433BF /* AGTSimpleCoreDataStack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		1445B9B61D9068A700128F91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1445B9B81D9068A700128F91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1445B9BF1D90695500128F91 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		14CF54D11D945A22006433BF /* AGTSimpleCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGTSimpleCoreDataStack.h; path = ../../../AGTSimpleCoreDataStack.h; sourceTree = "<group>"; };
+		14CF54D21D945A22006433BF /* AGTSimpleCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGTSimpleCoreDataStack.m; path = ../../../AGTSimpleCoreDataStack.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,7 @@
 		1445B9A61D9068A700128F91 /* HackerBookPro */ = {
 			isa = PBXGroup;
 			children = (
+				14CF54D01D9459D1006433BF /* Modelos */,
 				1445B9AA1D9068A700128F91 /* AppDelegate.h */,
 				1445B9AB1D9068A700128F91 /* AppDelegate.m */,
 				1445B9AD1D9068A700128F91 /* ViewController.h */,
@@ -80,6 +84,15 @@
 				1445B9A81D9068A700128F91 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14CF54D01D9459D1006433BF /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				14CF54D21D945A22006433BF /* AGTSimpleCoreDataStack.m */,
+				14CF54D11D945A22006433BF /* AGTSimpleCoreDataStack.h */,
+			);
+			name = Modelos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +169,7 @@
 				1445B9AF1D9068A700128F91 /* ViewController.m in Sources */,
 				1445B9AC1D9068A700128F91 /* AppDelegate.m in Sources */,
 				1445B9A91D9068A700128F91 /* main.m in Sources */,
+				14CF54D31D945A22006433BF /* AGTSimpleCoreDataStack.m in Sources */,
 				1445B9C01D90695500128F91 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,6 +325,7 @@
 				1445B9BD1D9068A700128F91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
