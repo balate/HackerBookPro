@@ -73,7 +73,6 @@
 				1445B9B51D9068A700128F91 /* LaunchScreen.storyboard */,
 				1445B9B81D9068A700128F91 /* Info.plist */,
 				1445B9A71D9068A700128F91 /* Supporting Files */,
-				1445B9BE1D90695500128F91 /* Model.xcdatamodeld */,
 			);
 			path = HackerBookPro;
 			sourceTree = "<group>";
@@ -89,6 +88,7 @@
 		14CF54D01D9459D1006433BF /* Modelos */ = {
 			isa = PBXGroup;
 			children = (
+				1445B9BE1D90695500128F91 /* Model.xcdatamodeld */,
 				14CF54D21D945A22006433BF /* AGTSimpleCoreDataStack.m */,
 				14CF54D11D945A22006433BF /* AGTSimpleCoreDataStack.h */,
 			);
