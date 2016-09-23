@@ -21,6 +21,8 @@
     //Create instance Stack of Core Data.
     self.model = [AGTSimpleCoreDataStack coreDataStackWithModelName:@"Model"];
     
+    [self trastearConDatos];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen]bounds]];
     
     self.window.backgroundColor = [UIColor whiteColor];
@@ -55,6 +57,27 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+
+#pragma marks -Utils
+-(void)trastearConDatos{
+
+    /*
+   //NSManagedObject for authentic men or Chuck Norris Style
+    //Create book
+    NSManagedObject *book= [NSEntityDescription insertNewObjectForEntityForName:@"Book"
+                                                         inManagedObjectContext:self.model.context];
+     
+    //Add properties values by KVC
+    [book setValue:@"AngularJS" forKey:@"title"];
+    [book setValue:@"http://fastandfluid.com/publicdownloads/AngularJSIn60MinutesIsh_DanWahlin_May2013.pdf"         forKey:@"pdfURL"];
+
+    // Get value property and console show
+    NSLog(@"The title book is %@", [book valueForKey:@"title"]);
+
+     */
+}
+
 
 
 @end
