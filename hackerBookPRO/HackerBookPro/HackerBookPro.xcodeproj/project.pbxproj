@@ -14,6 +14,16 @@
 		1445B9B41D9068A700128F91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1445B9B31D9068A700128F91 /* Assets.xcassets */; };
 		1445B9B71D9068A700128F91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1445B9B51D9068A700128F91 /* LaunchScreen.storyboard */; };
 		1445B9C01D90695500128F91 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1445B9BE1D90695500128F91 /* Model.xcdatamodeld */; };
+		1490E9981D968D0C00E200DE /* _JCOAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1490E98F1D968D0C00E200DE /* _JCOAuthor.m */; };
+		1490E9991D968D0C00E200DE /* _JCOBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 1490E9911D968D0C00E200DE /* _JCOBook.m */; };
+		1490E99A1D968D0C00E200DE /* _JCOImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1490E9931D968D0C00E200DE /* _JCOImage.m */; };
+		1490E99B1D968D0C00E200DE /* _JCOPdf.m in Sources */ = {isa = PBXBuildFile; fileRef = 1490E9951D968D0C00E200DE /* _JCOPdf.m */; };
+		1490E99C1D968D0C00E200DE /* _JCOTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 1490E9971D968D0C00E200DE /* _JCOTag.m */; };
+		1490E9A71D968D2E00E200DE /* JCOAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1490E99E1D968D2E00E200DE /* JCOAuthor.m */; };
+		1490E9A81D968D2E00E200DE /* JCOBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 1490E9A01D968D2E00E200DE /* JCOBook.m */; };
+		1490E9A91D968D2E00E200DE /* JCOImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1490E9A21D968D2E00E200DE /* JCOImage.m */; };
+		1490E9AA1D968D2E00E200DE /* JCOPdf.m in Sources */ = {isa = PBXBuildFile; fileRef = 1490E9A41D968D2E00E200DE /* JCOPdf.m */; };
+		1490E9AB1D968D2E00E200DE /* JCOTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 1490E9A61D968D2E00E200DE /* JCOTag.m */; };
 		14CF54D31D945A22006433BF /* AGTSimpleCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CF54D21D945A22006433BF /* AGTSimpleCoreDataStack.m */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +39,26 @@
 		1445B9B61D9068A700128F91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1445B9B81D9068A700128F91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1445B9BF1D90695500128F91 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		1490E98E1D968D0C00E200DE /* _JCOAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _JCOAuthor.h; sourceTree = "<group>"; };
+		1490E98F1D968D0C00E200DE /* _JCOAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _JCOAuthor.m; sourceTree = "<group>"; };
+		1490E9901D968D0C00E200DE /* _JCOBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _JCOBook.h; sourceTree = "<group>"; };
+		1490E9911D968D0C00E200DE /* _JCOBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _JCOBook.m; sourceTree = "<group>"; };
+		1490E9921D968D0C00E200DE /* _JCOImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _JCOImage.h; sourceTree = "<group>"; };
+		1490E9931D968D0C00E200DE /* _JCOImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _JCOImage.m; sourceTree = "<group>"; };
+		1490E9941D968D0C00E200DE /* _JCOPdf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _JCOPdf.h; sourceTree = "<group>"; };
+		1490E9951D968D0C00E200DE /* _JCOPdf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _JCOPdf.m; sourceTree = "<group>"; };
+		1490E9961D968D0C00E200DE /* _JCOTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _JCOTag.h; sourceTree = "<group>"; };
+		1490E9971D968D0C00E200DE /* _JCOTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _JCOTag.m; sourceTree = "<group>"; };
+		1490E99D1D968D2E00E200DE /* JCOAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCOAuthor.h; sourceTree = "<group>"; };
+		1490E99E1D968D2E00E200DE /* JCOAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCOAuthor.m; sourceTree = "<group>"; };
+		1490E99F1D968D2E00E200DE /* JCOBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCOBook.h; sourceTree = "<group>"; };
+		1490E9A01D968D2E00E200DE /* JCOBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCOBook.m; sourceTree = "<group>"; };
+		1490E9A11D968D2E00E200DE /* JCOImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCOImage.h; sourceTree = "<group>"; };
+		1490E9A21D968D2E00E200DE /* JCOImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCOImage.m; sourceTree = "<group>"; };
+		1490E9A31D968D2E00E200DE /* JCOPdf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCOPdf.h; sourceTree = "<group>"; };
+		1490E9A41D968D2E00E200DE /* JCOPdf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCOPdf.m; sourceTree = "<group>"; };
+		1490E9A51D968D2E00E200DE /* JCOTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCOTag.h; sourceTree = "<group>"; };
+		1490E9A61D968D2E00E200DE /* JCOTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCOTag.m; sourceTree = "<group>"; };
 		14CF54D11D945A22006433BF /* AGTSimpleCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGTSimpleCoreDataStack.h; path = ../../../AGTSimpleCoreDataStack.h; sourceTree = "<group>"; };
 		14CF54D21D945A22006433BF /* AGTSimpleCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGTSimpleCoreDataStack.m; path = ../../../AGTSimpleCoreDataStack.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +93,7 @@
 		1445B9A61D9068A700128F91 /* HackerBookPro */ = {
 			isa = PBXGroup;
 			children = (
+				1490E98B1D968C5200E200DE /* mogenerator */,
 				14CF54D01D9459D1006433BF /* Modelos */,
 				1445B9AA1D9068A700128F91 /* AppDelegate.h */,
 				1445B9AB1D9068A700128F91 /* AppDelegate.m */,
@@ -83,6 +114,49 @@
 				1445B9A81D9068A700128F91 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1490E98B1D968C5200E200DE /* mogenerator */ = {
+			isa = PBXGroup;
+			children = (
+				1490E98D1D968C6300E200DE /* machine */,
+				1490E98C1D968C5B00E200DE /* humans */,
+			);
+			name = mogenerator;
+			sourceTree = "<group>";
+		};
+		1490E98C1D968C5B00E200DE /* humans */ = {
+			isa = PBXGroup;
+			children = (
+				1490E99D1D968D2E00E200DE /* JCOAuthor.h */,
+				1490E99E1D968D2E00E200DE /* JCOAuthor.m */,
+				1490E99F1D968D2E00E200DE /* JCOBook.h */,
+				1490E9A01D968D2E00E200DE /* JCOBook.m */,
+				1490E9A11D968D2E00E200DE /* JCOImage.h */,
+				1490E9A21D968D2E00E200DE /* JCOImage.m */,
+				1490E9A31D968D2E00E200DE /* JCOPdf.h */,
+				1490E9A41D968D2E00E200DE /* JCOPdf.m */,
+				1490E9A51D968D2E00E200DE /* JCOTag.h */,
+				1490E9A61D968D2E00E200DE /* JCOTag.m */,
+			);
+			name = humans;
+			sourceTree = "<group>";
+		};
+		1490E98D1D968C6300E200DE /* machine */ = {
+			isa = PBXGroup;
+			children = (
+				1490E98E1D968D0C00E200DE /* _JCOAuthor.h */,
+				1490E98F1D968D0C00E200DE /* _JCOAuthor.m */,
+				1490E9901D968D0C00E200DE /* _JCOBook.h */,
+				1490E9911D968D0C00E200DE /* _JCOBook.m */,
+				1490E9921D968D0C00E200DE /* _JCOImage.h */,
+				1490E9931D968D0C00E200DE /* _JCOImage.m */,
+				1490E9941D968D0C00E200DE /* _JCOPdf.h */,
+				1490E9951D968D0C00E200DE /* _JCOPdf.m */,
+				1490E9961D968D0C00E200DE /* _JCOTag.h */,
+				1490E9971D968D0C00E200DE /* _JCOTag.m */,
+			);
+			name = machine;
 			sourceTree = "<group>";
 		};
 		14CF54D01D9459D1006433BF /* Modelos */ = {
@@ -167,10 +241,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				1445B9AF1D9068A700128F91 /* ViewController.m in Sources */,
+				1490E99C1D968D0C00E200DE /* _JCOTag.m in Sources */,
+				1490E9AB1D968D2E00E200DE /* JCOTag.m in Sources */,
 				1445B9AC1D9068A700128F91 /* AppDelegate.m in Sources */,
 				1445B9A91D9068A700128F91 /* main.m in Sources */,
 				14CF54D31D945A22006433BF /* AGTSimpleCoreDataStack.m in Sources */,
+				1490E99B1D968D0C00E200DE /* _JCOPdf.m in Sources */,
+				1490E99A1D968D0C00E200DE /* _JCOImage.m in Sources */,
+				1490E9AA1D968D2E00E200DE /* JCOPdf.m in Sources */,
+				1490E9A91D968D2E00E200DE /* JCOImage.m in Sources */,
+				1490E9A71D968D2E00E200DE /* JCOAuthor.m in Sources */,
 				1445B9C01D90695500128F91 /* Model.xcdatamodeld in Sources */,
+				1490E9981D968D0C00E200DE /* _JCOAuthor.m in Sources */,
+				1490E9991D968D0C00E200DE /* _JCOBook.m in Sources */,
+				1490E9A81D968D2E00E200DE /* JCOBook.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
