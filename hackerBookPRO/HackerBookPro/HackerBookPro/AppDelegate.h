@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-@class AGTSimpleCoreDataStack;
+#import "AGTSimpleCoreDataStack.h"
+
+//@class AGTSimpleCoreDataStack;
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;

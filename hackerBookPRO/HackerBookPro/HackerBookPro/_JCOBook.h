@@ -25,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSEntityDescription*)entityInManagedObjectContext:(NSManagedObjectContext*)moc_;
 @property (nonatomic, readonly, strong) JCOBookID *objectID;
 
-@property (nonatomic, strong) NSString* image;
+@property (nonatomic, strong) NSString* imageURL;
 
 @property (nonatomic, strong, nullable) NSNumber* isFavourite;
 
@@ -37,7 +37,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSString* title;
 
-@property (nonatomic, strong, nullable) JCOAuthor *author;
+@property (nonatomic, strong, nullable) NSSet<JCOAuthor*> *authors;
+- (nullable NSMutableSet<JCOAuthor*>*)authorsSet;
 
 @property (nonatomic, strong, nullable) JCOImage *img;
 
@@ -47,10 +48,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+@interface _JCOBook (AuthorsCoreDataGeneratedAccessors)
+- (void)addAuthors:(NSSet<JCOAuthor*>*)value_;
+- (void)removeAuthors:(NSSet<JCOAuthor*>*)value_;
+- (void)addAuthorsObject:(JCOAuthor*)value_;
+- (void)removeAuthorsObject:(JCOAuthor*)value_;
+
+@end
+
 @interface _JCOBook (CoreDataGeneratedPrimitiveAccessors)
 
-- (NSString*)primitiveImage;
-- (void)setPrimitiveImage:(NSString*)value;
+- (NSString*)primitiveImageURL;
+- (void)setPrimitiveImageURL:(NSString*)value;
 
 - (NSNumber*)primitiveIsFavourite;
 - (void)setPrimitiveIsFavourite:(NSNumber*)value;
@@ -64,8 +73,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString*)primitiveTitle;
 - (void)setPrimitiveTitle:(NSString*)value;
 
-- (JCOAuthor*)primitiveAuthor;
-- (void)setPrimitiveAuthor:(JCOAuthor*)value;
+- (NSMutableSet<JCOAuthor*>*)primitiveAuthors;
+- (void)setPrimitiveAuthors:(NSMutableSet<JCOAuthor*>*)value;
 
 - (JCOImage*)primitiveImg;
 - (void)setPrimitiveImg:(JCOImage*)value;
@@ -79,14 +88,14 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 @interface JCOBookAttributes: NSObject 
-+ (NSString *)image;
++ (NSString *)imageURL;
 + (NSString *)isFavourite;
 + (NSString *)pdfURL;
 + (NSString *)title;
 @end
 
 @interface JCOBookRelationships: NSObject
-+ (NSString *)author;
++ (NSString *)authors;
 + (NSString *)img;
 + (NSString *)pdf;
 + (NSString *)tag;

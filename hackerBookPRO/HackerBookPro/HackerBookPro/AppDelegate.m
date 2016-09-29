@@ -8,8 +8,15 @@
 
 #import "AppDelegate.h"
 #import "AGTSimpleCoreDataStack.h"
+#import "helper.h"
+#import "JCODonwloadJSON.h"
+
+
+
+
 
 @interface AppDelegate ()
+
 
 @end
 
@@ -18,7 +25,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    //Create instance Stack of Core Data.
+    //Create instance model of Core Data.
     self.model = [AGTSimpleCoreDataStack coreDataStackWithModelName:@"Model"];
     
     [self trastearConDatos];
@@ -78,6 +85,30 @@
      */
 }
 
+
+-(void)configureFirstAppear{
+    
+    //checkout file JSON is save
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    if (![ud objectForKey:FINISH_DOWNLOAD]) {
+        
+        
+        //Async donwload
+        dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INITIATED, 0), ^{
+            
+            NSURL *jsonURL = [NSURL URLWithString:@"https://t.co/K9ziV0z3SJ"];
+            NSData *data = [NSData dataWithContentsOfURL:jsonURL];
+            //file downloader -> return firt flat
+            dispatch_async(dispatch_get_main_queue(), ^{
+                //add coreData the data
+               // [self.model addDownloadedData:data];
+                [self.model downloadBookList:data];
+                
+            });
+            
+        });
+    }
+}
 
 
 @end

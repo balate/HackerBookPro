@@ -14,6 +14,8 @@
 		1445B9B41D9068A700128F91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1445B9B31D9068A700128F91 /* Assets.xcassets */; };
 		1445B9B71D9068A700128F91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1445B9B51D9068A700128F91 /* LaunchScreen.storyboard */; };
 		1445B9C01D90695500128F91 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1445B9BE1D90695500128F91 /* Model.xcdatamodeld */; };
+		14901A661D9834990062EE61 /* JCODonwloadJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 14901A651D9834990062EE61 /* JCODonwloadJSON.m */; };
+		14901A7D1D9D89D00062EE61 /* AGTSimpleCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 14901A7C1D9D89D00062EE61 /* AGTSimpleCoreDataStack.m */; };
 		1490E9981D968D0C00E200DE /* _JCOAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1490E98F1D968D0C00E200DE /* _JCOAuthor.m */; };
 		1490E9991D968D0C00E200DE /* _JCOBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 1490E9911D968D0C00E200DE /* _JCOBook.m */; };
 		1490E99A1D968D0C00E200DE /* _JCOImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1490E9931D968D0C00E200DE /* _JCOImage.m */; };
@@ -24,7 +26,6 @@
 		1490E9A91D968D2E00E200DE /* JCOImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1490E9A21D968D2E00E200DE /* JCOImage.m */; };
 		1490E9AA1D968D2E00E200DE /* JCOPdf.m in Sources */ = {isa = PBXBuildFile; fileRef = 1490E9A41D968D2E00E200DE /* JCOPdf.m */; };
 		1490E9AB1D968D2E00E200DE /* JCOTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 1490E9A61D968D2E00E200DE /* JCOTag.m */; };
-		14CF54D31D945A22006433BF /* AGTSimpleCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CF54D21D945A22006433BF /* AGTSimpleCoreDataStack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,11 @@
 		1445B9B61D9068A700128F91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1445B9B81D9068A700128F91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1445B9BF1D90695500128F91 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		14901A641D9834990062EE61 /* JCODonwloadJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCODonwloadJSON.h; sourceTree = "<group>"; };
+		14901A651D9834990062EE61 /* JCODonwloadJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCODonwloadJSON.m; sourceTree = "<group>"; };
+		14901A7A1D9C3E790062EE61 /* helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = helper.h; sourceTree = "<group>"; };
+		14901A7B1D9D89D00062EE61 /* AGTSimpleCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGTSimpleCoreDataStack.h; path = ../../../../../Downloads/AGTSimpleCoreDataStack/AGTSimpleCoreDataStack.h; sourceTree = "<group>"; };
+		14901A7C1D9D89D00062EE61 /* AGTSimpleCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGTSimpleCoreDataStack.m; path = ../../../../../Downloads/AGTSimpleCoreDataStack/AGTSimpleCoreDataStack.m; sourceTree = "<group>"; };
 		1490E98E1D968D0C00E200DE /* _JCOAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _JCOAuthor.h; sourceTree = "<group>"; };
 		1490E98F1D968D0C00E200DE /* _JCOAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _JCOAuthor.m; sourceTree = "<group>"; };
 		1490E9901D968D0C00E200DE /* _JCOBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _JCOBook.h; sourceTree = "<group>"; };
@@ -59,8 +65,6 @@
 		1490E9A41D968D2E00E200DE /* JCOPdf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCOPdf.m; sourceTree = "<group>"; };
 		1490E9A51D968D2E00E200DE /* JCOTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCOTag.h; sourceTree = "<group>"; };
 		1490E9A61D968D2E00E200DE /* JCOTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCOTag.m; sourceTree = "<group>"; };
-		14CF54D11D945A22006433BF /* AGTSimpleCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGTSimpleCoreDataStack.h; path = ../../../AGTSimpleCoreDataStack.h; sourceTree = "<group>"; };
-		14CF54D21D945A22006433BF /* AGTSimpleCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGTSimpleCoreDataStack.m; path = ../../../AGTSimpleCoreDataStack.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,8 @@
 		1445B9A61D9068A700128F91 /* HackerBookPro */ = {
 			isa = PBXGroup;
 			children = (
+				14901A6D1D9843AB0062EE61 /* Library */,
+				14901A631D9834300062EE61 /* Helpers */,
 				1490E98B1D968C5200E200DE /* mogenerator */,
 				14CF54D01D9459D1006433BF /* Modelos */,
 				1445B9AA1D9068A700128F91 /* AppDelegate.h */,
@@ -114,6 +120,23 @@
 				1445B9A81D9068A700128F91 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14901A631D9834300062EE61 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				14901A641D9834990062EE61 /* JCODonwloadJSON.h */,
+				14901A651D9834990062EE61 /* JCODonwloadJSON.m */,
+				14901A7A1D9C3E790062EE61 /* helper.h */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		14901A6D1D9843AB0062EE61 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Library;
 			sourceTree = "<group>";
 		};
 		1490E98B1D968C5200E200DE /* mogenerator */ = {
@@ -163,8 +186,8 @@
 			isa = PBXGroup;
 			children = (
 				1445B9BE1D90695500128F91 /* Model.xcdatamodeld */,
-				14CF54D21D945A22006433BF /* AGTSimpleCoreDataStack.m */,
-				14CF54D11D945A22006433BF /* AGTSimpleCoreDataStack.h */,
+				14901A7B1D9D89D00062EE61 /* AGTSimpleCoreDataStack.h */,
+				14901A7C1D9D89D00062EE61 /* AGTSimpleCoreDataStack.m */,
 			);
 			name = Modelos;
 			sourceTree = "<group>";
@@ -245,7 +268,7 @@
 				1490E9AB1D968D2E00E200DE /* JCOTag.m in Sources */,
 				1445B9AC1D9068A700128F91 /* AppDelegate.m in Sources */,
 				1445B9A91D9068A700128F91 /* main.m in Sources */,
-				14CF54D31D945A22006433BF /* AGTSimpleCoreDataStack.m in Sources */,
+				14901A661D9834990062EE61 /* JCODonwloadJSON.m in Sources */,
 				1490E99B1D968D0C00E200DE /* _JCOPdf.m in Sources */,
 				1490E99A1D968D0C00E200DE /* _JCOImage.m in Sources */,
 				1490E9AA1D968D2E00E200DE /* JCOPdf.m in Sources */,
@@ -254,6 +277,7 @@
 				1445B9C01D90695500128F91 /* Model.xcdatamodeld in Sources */,
 				1490E9981D968D0C00E200DE /* _JCOAuthor.m in Sources */,
 				1490E9991D968D0C00E200DE /* _JCOBook.m in Sources */,
+				14901A7D1D9D89D00062EE61 /* AGTSimpleCoreDataStack.m in Sources */,
 				1490E9A81D968D2E00E200DE /* JCOBook.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

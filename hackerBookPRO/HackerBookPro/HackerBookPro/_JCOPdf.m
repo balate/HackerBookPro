@@ -32,15 +32,15 @@
 	return keyPaths;
 }
 
-@dynamic pdf;
+@dynamic pdfData;
 
 @dynamic book;
 
 @end
 
 @implementation JCOPdfAttributes 
-+ (NSString *)pdf {
-	return @"pdf";
++ (NSString *)pdfData {
+	return @"pdfData";
 }
 @end
 

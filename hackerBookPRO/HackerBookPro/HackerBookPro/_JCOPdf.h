@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSEntityDescription*)entityInManagedObjectContext:(NSManagedObjectContext*)moc_;
 @property (nonatomic, readonly, strong) JCOPdfID *objectID;
 
-@property (nonatomic, strong, nullable) NSData* pdf;
+@property (nonatomic, strong, nullable) NSData* pdfData;
 
 @property (nonatomic, strong, nullable) JCOBook *book;
 
@@ -30,8 +30,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface _JCOPdf (CoreDataGeneratedPrimitiveAccessors)
 
-- (NSData*)primitivePdf;
-- (void)setPrimitivePdf:(NSData*)value;
+- (NSData*)primitivePdfData;
+- (void)setPrimitivePdfData:(NSData*)value;
 
 - (JCOBook*)primitiveBook;
 - (void)setPrimitiveBook:(JCOBook*)value;
@@ -39,7 +39,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 @interface JCOPdfAttributes: NSObject 
-+ (NSString *)pdf;
++ (NSString *)pdfData;
 @end
 
 @interface JCOPdfRelationships: NSObject

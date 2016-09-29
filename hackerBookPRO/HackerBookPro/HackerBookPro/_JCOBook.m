@@ -38,7 +38,7 @@
 	return keyPaths;
 }
 
-@dynamic image;
+@dynamic imageURL;
 
 @dynamic isFavourite;
 
@@ -64,7 +64,16 @@
 
 @dynamic title;
 
-@dynamic author;
+@dynamic authors;
+
+- (NSMutableSet<JCOAuthor*>*)authorsSet {
+	[self willAccessValueForKey:@"authors"];
+
+	NSMutableSet<JCOAuthor*> *result = (NSMutableSet<JCOAuthor*>*)[self mutableSetValueForKey:@"authors"];
+
+	[self didAccessValueForKey:@"authors"];
+	return result;
+}
 
 @dynamic img;
 
@@ -75,8 +84,8 @@
 @end
 
 @implementation JCOBookAttributes 
-+ (NSString *)image {
-	return @"image";
++ (NSString *)imageURL {
+	return @"imageURL";
 }
 + (NSString *)isFavourite {
 	return @"isFavourite";
@@ -90,8 +99,8 @@
 @end
 
 @implementation JCOBookRelationships 
-+ (NSString *)author {
-	return @"author";
++ (NSString *)authors {
+	return @"authors";
 }
 + (NSString *)img {
 	return @"img";
