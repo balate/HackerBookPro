@@ -45,7 +45,7 @@
     [book setIsFavouriteValue:isFavorite];
     book.tag = tags;
     book.authors = author;
-    book.imageURL = [JCOImage insertInManagedObjectContext:context];
+    book.img = [JCOImage insertInManagedObjectContext:context];
     
     return book;
     
@@ -131,7 +131,8 @@
             //add image to CoreData
             JCOImage *img = [JCOImage insertInManagedObjectContext:self.managedObjectContext];
             img.imgData = data;
-            self.imageURL = img;
+            //self.imageURL = img;
+            self.img =img;
         });
         
     });

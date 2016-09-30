@@ -32,10 +32,16 @@
     
     [self trastearConDatos];
     
+
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen]bounds]];
     
+    [self configureFirstAppear];
+    
+    [self configureForPhone];
+    
     self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyWindow];
+    [self.window makeKeyAndVisible];
 
     return YES;
 }

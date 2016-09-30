@@ -52,6 +52,7 @@
     cell.imageView.image = b.img.image;
     
     
+    
     //cell
     return cell;
     
