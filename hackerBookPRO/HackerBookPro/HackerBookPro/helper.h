@@ -14,3 +14,5 @@
 
 #define FINISH_DOWNLOAD @"finishDownload"
 #define URL_DOWNLOAD @"https://t.co/K9ziV0z3SJ"
+
+#define LAST_BOOK @"lastBook"

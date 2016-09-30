@@ -13,8 +13,7 @@
 #import "JCOBook.h"
 #import "JCOTag.h"
 #import "JCODonwloadJSON.h"
-
-
+#import "JCOBooksViewController.h"
 
 
 
@@ -105,6 +104,28 @@
     }
 }
 
+-(void) configureForPhone{
+    
+    NSFetchRequest *req = [NSFetchRequest fetchRequestWithEntityName:[JCOTag entityName]];
+    req.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:JCOTagAttributes.nameTag
+                                                          ascending:YES
+                                                           selector:@selector(caseInsensitiveCompare:)]];
+    req.fetchBatchSize = 20;
+    NSFetchedResultsController *fc = [[NSFetchedResultsController alloc] initWithFetchRequest:req
+                                                                         managedObjectContext:self.model.context
+                                                                           sectionNameKeyPath:JCOTagAttributes.nameTag
+                                                                                    cacheName:nil];
+    
+    JCOBooksViewController *bkVC = [[JCOBooksViewController alloc] initWithFetchedResultsController:fc
+                                                                                              style:UITableViewStylePlain];
+    bkVC.delegate = bkVC;
+    
+    UINavigationController *navVC = [[UINavigationController alloc]initWithRootViewController:bkVC];
+    
+    self.window.rootViewController = navVC;
+    
+    
+}
 
 
 @end
