@@ -24,7 +24,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSString* nameTag;
 
-@property (nonatomic, strong, nullable) JCOBook *book;
+@property (nonatomic, strong, nullable) NSSet<JCOBook*> *book;
+- (nullable NSMutableSet<JCOBook*>*)bookSet;
+
+@end
+
+@interface _JCOTag (BookCoreDataGeneratedAccessors)
+- (void)addBook:(NSSet<JCOBook*>*)value_;
+- (void)removeBook:(NSSet<JCOBook*>*)value_;
+- (void)addBookObject:(JCOBook*)value_;
+- (void)removeBookObject:(JCOBook*)value_;
 
 @end
 
@@ -33,8 +42,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString*)primitiveNameTag;
 - (void)setPrimitiveNameTag:(NSString*)value;
 
-- (JCOBook*)primitiveBook;
-- (void)setPrimitiveBook:(JCOBook*)value;
+- (NSMutableSet<JCOBook*>*)primitiveBook;
+- (void)setPrimitiveBook:(NSMutableSet<JCOBook*>*)value;
 
 @end
 

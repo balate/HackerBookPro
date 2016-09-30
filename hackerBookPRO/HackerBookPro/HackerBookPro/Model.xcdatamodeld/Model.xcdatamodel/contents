@@ -12,7 +12,7 @@
         <relationship name="authors" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Author" inverseName="book" inverseEntity="Author" syncable="YES"/>
         <relationship name="img" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Image" inverseName="book" inverseEntity="Image" syncable="YES"/>
         <relationship name="pdf" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Pdf" inverseName="book" inverseEntity="Pdf" syncable="YES"/>
-        <relationship name="tag" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Tag" inverseName="book" inverseEntity="Tag" syncable="YES"/>
+        <relationship name="tag" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tag" inverseName="book" inverseEntity="Tag" syncable="YES"/>
     </entity>
     <entity name="Image" representedClassName="JCOImage" syncable="YES">
         <attribute name="imgData" optional="YES" attributeType="Binary" syncable="YES"/>
@@ -24,7 +24,7 @@
     </entity>
     <entity name="Tag" representedClassName="JCOTag" syncable="YES">
         <attribute name="nameTag" attributeType="String" indexed="YES" syncable="YES"/>
-        <relationship name="book" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Book" inverseName="tag" inverseEntity="Book" syncable="YES"/>
+        <relationship name="book" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Book" inverseName="tag" inverseEntity="Book" syncable="YES"/>
     </entity>
     <elements>
         <element name="Author" positionX="-54" positionY="-9" width="128" height="75"/>

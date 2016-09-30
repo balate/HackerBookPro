@@ -8,7 +8,10 @@
 
 #import "AppDelegate.h"
 #import "AGTSimpleCoreDataStack.h"
+#import "AGTSimpleCoreDataStack+Download.h"
 #import "helper.h"
+#import "JCOBook.h"
+#import "JCOTag.h"
 #import "JCODonwloadJSON.h"
 
 
@@ -94,21 +97,14 @@
         
         
         //Async donwload
-        dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INITIATED, 0), ^{
-            
-            NSURL *jsonURL = [NSURL URLWithString:@"https://t.co/K9ziV0z3SJ"];
-            NSData *data = [NSData dataWithContentsOfURL:jsonURL];
-            //file downloader -> return firt flat
-            dispatch_async(dispatch_get_main_queue(), ^{
-                //add coreData the data
-               // [self.model addDownloadedData:data];
-                [self.model downloadBookList:data];
-                
-            });
-            
-        });
+        [JCODonwloadJSON downloadBookListWithBlock:^(NSArray *list) {
+            [self.model addDownloadedData:list];
+        }];
+        
+
     }
 }
+
 
 
 @end

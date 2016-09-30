@@ -7,12 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AGTSimpleCoreDataStack.h"
 
-@interface JCODonwloadJSON : NSObject
+@interface JCODonwloadJSON : NSObject 
 
 // Download books the server
-+(void)downloadBookList : (NSData *)library withBlock: (void (^)(NSArray * list) )completionBlock;
--(void) addDownloadedData: (NSData *)data;
-+(void)downloadJSONFromURL:(NSURL *)jsonURL;
++(void)downloadBookListWithBlock: (void (^)(NSArray * list) )completionBlock;
+
+
 
 @end

@@ -36,6 +36,15 @@
 
 @dynamic book;
 
+- (NSMutableSet<JCOBook*>*)bookSet {
+	[self willAccessValueForKey:@"book"];
+
+	NSMutableSet<JCOBook*> *result = (NSMutableSet<JCOBook*>*)[self mutableSetValueForKey:@"book"];
+
+	[self didAccessValueForKey:@"book"];
+	return result;
+}
+
 @end
 
 @implementation JCOTagAttributes 

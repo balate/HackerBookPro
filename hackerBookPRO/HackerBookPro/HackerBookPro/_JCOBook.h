@@ -44,7 +44,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong, nullable) JCOPdf *pdf;
 
-@property (nonatomic, strong, nullable) JCOTag *tag;
+@property (nonatomic, strong, nullable) NSSet<JCOTag*> *tag;
+- (nullable NSMutableSet<JCOTag*>*)tagSet;
 
 @end
 
@@ -53,6 +54,14 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)removeAuthors:(NSSet<JCOAuthor*>*)value_;
 - (void)addAuthorsObject:(JCOAuthor*)value_;
 - (void)removeAuthorsObject:(JCOAuthor*)value_;
+
+@end
+
+@interface _JCOBook (TagCoreDataGeneratedAccessors)
+- (void)addTag:(NSSet<JCOTag*>*)value_;
+- (void)removeTag:(NSSet<JCOTag*>*)value_;
+- (void)addTagObject:(JCOTag*)value_;
+- (void)removeTagObject:(JCOTag*)value_;
 
 @end
 
@@ -82,8 +91,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (JCOPdf*)primitivePdf;
 - (void)setPrimitivePdf:(JCOPdf*)value;
 
-- (JCOTag*)primitiveTag;
-- (void)setPrimitiveTag:(JCOTag*)value;
+- (NSMutableSet<JCOTag*>*)primitiveTag;
+- (void)setPrimitiveTag:(NSMutableSet<JCOTag*>*)value;
 
 @end
 

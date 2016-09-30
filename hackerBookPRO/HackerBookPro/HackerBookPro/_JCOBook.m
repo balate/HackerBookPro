@@ -81,6 +81,15 @@
 
 @dynamic tag;
 
+- (NSMutableSet<JCOTag*>*)tagSet {
+	[self willAccessValueForKey:@"tag"];
+
+	NSMutableSet<JCOTag*> *result = (NSMutableSet<JCOTag*>*)[self mutableSetValueForKey:@"tag"];
+
+	[self didAccessValueForKey:@"tag"];
+	return result;
+}
+
 @end
 
 @implementation JCOBookAttributes 

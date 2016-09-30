@@ -184,12 +184,12 @@
         if ([result count] != 0 ) {
             
  
-            [self addTagsObject:[result lastObject]];
+            [self addTagObject:[result lastObject]];
         }else{
             
             
-            [self addTagsObject:[JCOTag tagWithName:name
-                                            context:context]];
+            [self addTagObject:[JCOTag tagWithName:name
+                                           context:context]];
         }
     }
     
