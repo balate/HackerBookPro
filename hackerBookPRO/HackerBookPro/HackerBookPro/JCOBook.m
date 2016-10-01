@@ -175,10 +175,10 @@
     for (NSString *name in tags) {
         
         NSFetchRequest *req = [NSFetchRequest fetchRequestWithEntityName:[JCOTag entityName]];
-        req.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:JCOTagAttributes.nameTag                                                              ascending:YES
+        req.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:JCOTagAttributes.nameTag                                                            ascending:YES
                                                                selector:@selector(caseInsensitiveCompare:)]];
         req.fetchBatchSize = 20;
-        req.predicate= [NSPredicate predicateWithFormat:@"name = %@",name];
+        req.predicate= [NSPredicate predicateWithFormat:@"nameTag = %@",name];
         NSError *error;
         NSArray *result = [self.managedObjectContext executeFetchRequest:req
                                                                    error:&error];
@@ -246,13 +246,13 @@
     NSString *aux=@"";
     NSArray *array = [self.tag allObjects];
     if ([self.tag count]== 1) {
-        return [NSString stringWithFormat:@"%@", [[array objectAtIndex:0] name]];
+        return [NSString stringWithFormat:@"%@", [[array objectAtIndex:0] nameTag]];
     }else{
         for (int i=0; i<[array count] ; i++) {
             if (i == 0) {
-                aux = [NSString stringWithFormat:@"%@", [[array objectAtIndex:i] name]];
+                aux = [NSString stringWithFormat:@"%@", [[array objectAtIndex:i] nameTag]];
             }else{
-                aux = [NSString stringWithFormat:@"%@,%@", [[array objectAtIndex:i] name], aux];
+                aux = [NSString stringWithFormat:@"%@,%@", [[array objectAtIndex:i] nameTag], aux];
             }
         }
         return aux;
