@@ -22,9 +22,11 @@
 
 -(id) initWithModel: (JCOBook *)model;
 
-//- (IBAction)readBook:(id)sender;
+
 
 - (IBAction)changeStateFavorite:(id)sender;
+
+
 
 
 @end

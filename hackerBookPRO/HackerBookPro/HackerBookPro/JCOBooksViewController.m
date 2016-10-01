@@ -49,8 +49,7 @@
     //syncronize cell and book
     cell.textLabel.text = b.title;
     cell.detailTextLabel.text = [b tagsDescription];
-    //cell.imageView.image = b.img.image;
-    
+   // cell.imageView.image = b.img.image;
     
     
     //cell
