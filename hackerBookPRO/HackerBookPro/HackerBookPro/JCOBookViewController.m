@@ -11,6 +11,8 @@
 #import "JCOBook.h"
 #import "JCOTag.h"
 #import "JCOImage.h"
+#import "JCOPdf.h"
+#import "JCOPDFViewController.h"
 
 @interface JCOBookViewController ()
 
@@ -45,7 +47,6 @@
 
 
 #pragma mark - actions
-/*
 - (IBAction)readBook:(id)sender {
     
     if (self.model.pdf.pdfData == nil) {
@@ -53,21 +54,21 @@
             
             NSURL *jsonURL = [NSURL URLWithString:self.model.pdfURL];
             NSData *data = [NSData dataWithContentsOfURL:jsonURL];
-            //cuando la tengo, me voy a primer plano
+            
             dispatch_async(dispatch_get_main_queue(), ^{
-                //introduzco en core data lo que me descargo
+                
                 self.model.pdf.pdfData = data;
             });
             
         });
     }
     
-    [self.navigationController pushViewController:[[BSISimplePDFViewController alloc] initWithModel:self.model.pdf]
+    [self.navigationController pushViewController:[[JCOPDFViewController alloc] initWithModel:self.model.pdf]
                                          animated:YES];
     
     
 }
-*/
+
 - (IBAction)changeStateFavorite:(id)sender {
     
     if (self.model.isFavouriteValue) {
@@ -81,7 +82,7 @@
                                                           ascending:YES
                                                            selector:@selector(caseInsensitiveCompare:)]];
     req.fetchBatchSize = 20;
-    req.predicate= [NSPredicate predicateWithFormat:@"name == %@",name];
+    req.predicate= [NSPredicate predicateWithFormat:@"nameTag == %@",name];
     NSError *error;
     NSArray *result = [self.model.managedObjectContext executeFetchRequest:req
                                                                      error:&error];
